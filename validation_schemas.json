@@ -1,0 +1,438 @@
+{
+    "SemEval2014Task4": {
+        "restaurants": {
+            "TSD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "target": {
+                            "type": "string"
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "conflict",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "target",
+                        "sentiment"
+                    ]
+                }
+            },
+            "ASD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "aspect": {
+                            "type": "string",
+                            "enum": ["food", "service", "price", "ambience", "anecdotes/miscellaneous"]
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "conflict",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "aspect",
+                        "sentiment"
+                    ]
+                }
+            }
+        },
+        "laptops": {
+            "TSD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "target": {
+                            "type": "string"
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "conflict",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "target",
+                        "sentiment"
+                    ]
+                }
+            }
+        }
+    },
+    "SemEval2015Task12": {
+        "restaurants": {
+            "TASD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "aspect": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string",
+                                    "enum": [
+                                        "RESTAURANT",
+                                        "FOOD",
+                                        "DRINKS",
+                                        "AMBIENCE",
+                                        "SERVICE",
+                                        "LOCATION"
+                                    ]
+                                },
+                                "attribute": {
+                                    "type": "string",
+                                    "enum": [
+                                        "GENERAL",
+                                        "PRICES",
+                                        "QUALITY",
+                                        "STYLE_OPTIONS",
+                                        "MISCELLANEOUS"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "attribute"
+                            ]
+                        },
+                        "target": {
+                            "type": "string"
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "aspect",
+                        "target",
+                        "sentiment"
+                    ]
+                }
+            },
+            "ASD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "aspect": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string",
+                                    "enum": [
+                                        "RESTAURANT",
+                                        "FOOD",
+                                        "DRINKS",
+                                        "AMBIENCE",
+                                        "SERVICE",
+                                        "LOCATION"
+                                    ]
+                                },
+                                "attribute": {
+                                    "type": "string",
+                                    "enum": [
+                                        "GENERAL",
+                                        "PRICES",
+                                        "QUALITY",
+                                        "STYLE_OPTIONS",
+                                        "MISCELLANEOUS"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "attribute"
+                            ]
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "aspect",
+                        "sentiment"
+                    ]
+                }
+            }
+        },
+        "laptops": {
+            "ASD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "aspect": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string",
+                                    "enum": [
+                                        "LAPTOP",
+                                        "DISPLAY",
+                                        "KEYBOARD",
+                                        "MOUSE",
+                                        "MOTHERBOARD",
+                                        "CPU",
+                                        "FANS_COOLING",
+                                        "PORTS",
+                                        "MEMORY",
+                                        "POWER_SUPPLY",
+                                        "OPTICAL_DRIVES",
+                                        "BATTERY",
+                                        "GRAPHICS",
+                                        "HARD_DISC",
+                                        "MULTIMEDIA_DEVICES",
+                                        "HARDWARE",
+                                        "SOFTWARE",
+                                        "OS",
+                                        "WARRANTY",
+                                        "SHIPPING",
+                                        "SUPPORT",
+                                        "COMPANY"
+                                    ]
+                                },
+                                "attribute": {
+                                    "type": "string",
+                                    "enum": [
+                                        "GENERAL",
+                                        "PRICE",
+                                        "QUALITY",
+                                        "OPERATION_PERFORMANCE",
+                                        "USABILITY",
+                                        "DESIGN_FEATURES",
+                                        "PORTABILITY",
+                                        "CONNECTIVITY",
+                                        "MISCELLANEOUS"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "attribute"
+                            ]
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "aspect",
+                        "sentiment"
+                    ]
+                }
+            }
+        }
+    },
+    "SemEval2016Task5": {
+        "restaurants": {
+            "TASD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "aspect": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string",
+                                    "enum": [
+                                        "RESTAURANT",
+                                        "FOOD",
+                                        "DRINKS",
+                                        "AMBIENCE",
+                                        "SERVICE",
+                                        "LOCATION"
+                                    ]
+                                },
+                                "attribute": {
+                                    "type": "string",
+                                    "enum": [
+                                        "GENERAL",
+                                        "PRICES",
+                                        "QUALITY",
+                                        "STYLE_OPTIONS",
+                                        "MISCELLANEOUS"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "attribute"
+                            ]
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "aspect",
+                        "target",
+                        "sentiment"
+                    ]
+                }
+            },
+            "ASD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "aspect": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string",
+                                    "enum": [
+                                        "RESTAURANT",
+                                        "FOOD",
+                                        "DRINKS",
+                                        "AMBIENCE",
+                                        "SERVICE",
+                                        "LOCATION"
+                                    ]
+                                },
+                                "attribute": {
+                                    "type": "string",
+                                    "enum": [
+                                        "GENERAL",
+                                        "PRICES",
+                                        "QUALITY",
+                                        "STYLE_OPTIONS",
+                                        "MISCELLANEOUS"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "attribute"
+                            ]
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "aspect",
+                        "sentiment"
+                    ]
+                }
+            }
+        },
+        "laptops": {
+            "ASD": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "aspect": {
+                            "type": "object",
+                            "properties": {
+                                "entity": {
+                                    "type": "string",
+                                    "enum": [
+                                        "LAPTOP",
+                                        "DISPLAY",
+                                        "KEYBOARD",
+                                        "MOUSE",
+                                        "MOTHERBOARD",
+                                        "CPU",
+                                        "FANS_COOLING",
+                                        "PORTS",
+                                        "MEMORY",
+                                        "POWER_SUPPLY",
+                                        "OPTICAL_DRIVES",
+                                        "BATTERY",
+                                        "GRAPHICS",
+                                        "HARD_DISC",
+                                        "MULTIMEDIA_DEVICES",
+                                        "HARDWARE",
+                                        "SOFTWARE",
+                                        "OS",
+                                        "WARRANTY",
+                                        "SHIPPING",
+                                        "SUPPORT",
+                                        "COMPANY"
+                                    ]
+                                },
+                                "attribute": {
+                                    "type": "string",
+                                    "enum": [
+                                        "GENERAL",
+                                        "PRICE",
+                                        "QUALITY",
+                                        "OPERATION_PERFORMANCE",
+                                        "USABILITY",
+                                        "DESIGN_FEATURES",
+                                        "PORTABILITY",
+                                        "CONNECTIVITY",
+                                        "MISCELLANEOUS"
+                                    ]
+                                }
+                            },
+                            "required": [
+                                "entity",
+                                "attribute"
+                            ]
+                        },
+                        "sentiment": {
+                            "type": "string",
+                            "enum": [
+                                "positive",
+                                "negative",
+                                "neutral"
+                            ]
+                        }
+                    },
+                    "required": [
+                        "aspect",
+                        "sentiment"
+                    ]
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+    "SemEval2014Task4": {
+        "restaurants": {
+            "ASD": {
+                "description": "For the provided restaurant review sentence, identify aspects for which an opinion is expressed. Use the following predefined categories:\n\nAspects: \"food\", \"service\", \"price\", \"ambience\", \"anecdotes/miscellaneous\"\n\nAdditionally, determine the sentiment polarity of the opinion towards the aspect. The sentiment polarity can be \"positive\", \"negative\", \"conflict\", or \"neutral\".\n\nProvide your findings in the format of a list of opinion dictionaries. Each dictionary should have an \"aspect\", a \"target\", and a \"sentiment\".",
+                "example_structure": "Review: {text}\nOutput: {output}",
+                "example_fields": [
+                    "text",
+                    "output"
+                ],
+                "input_structure": "Review: {text}",
+                "input_fields": [
+                    "text"
+                ]
+            },
+            "TSD": {
+                "description": "For the provided restaurant review sentence, extract the target expression from the sentence, which is the portion of the review that references any specific aspect of the entity being reviewed.\n\nAdditionally, determine the sentiment polarity of the opinion towards the aspect. The sentiment polarity can be \"positive\", \"negative\", \"conflict\", or \"neutral\".\n\nProvide your findings in the format of a list of opinion dictionaries. Each dictionary should have an \"aspect\", a \"target\", and a \"sentiment\".",
+                "example_structure": "Review: {text}\nOutput: {output}",
+                "example_fields": [
+                    "text",
+                    "output"
+                ],
+                "input_structure": "Review: {text}",
+                "input_fields": [
+                    "text"
+                ]
+            }
+        },
+        "laptops": {
+            "TSD": {
+                "description": "For the provided laptop review sentence, extract the target expression from the sentence, which is the portion of the review that references any specific aspect of the entity being reviewed.\n\nAdditionally, determine the sentiment polarity of the opinion towards the aspect. The sentiment polarity can be \"positive\", \"negative\", \"conflict\", or \"neutral\".\n\nProvide your findings in the format of a list of opinion dictionaries. Each dictionary should have an \"aspect\", a \"target\", and a \"sentiment\".",
+                "example_structure": "Review: {text}\nOutput: {output}",
+                "example_fields": [
+                    "text",
+                    "output"
+                ],
+                "input_structure": "Review: {text}",
+                "input_fields": [
+                    "text"
+                ]
+            }
+        }
+    },
+    "SemEval2015Task12": {
+        "restaurants": {
+            "TASD": {
+                "description": "For the provided restaurant review sentence, identify pairs of entities and attributes, which define an aspect for which an opinion is expressed. Use the following predefined categories:\n\nEntities: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION\nAttributes: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS\n\nAlso, extract the target expression from the sentence, which is the portion of the review that references the specific entity for each entity-attribute pair. If the entity isn't directly mentioned, label the target expression as \"NULL\".\n\nAdditionally, determine the sentiment polarity of the opinion towards the identified entity-attribute pair. The sentiment polarity can be \"positive\", \"negative\", or \"neutral\".\n\nProvide your findings in the format of a list of opinion dictionaries. Each dictionary should have an \"aspect\" (comprising \"entity\" and \"attribute\"), a \"target\", and a \"sentiment\".",
+                "example_structure": "Review: {text}\nOutput: {output}",
+                "example_fields": [
+                    "text",
+                    "output"
+                ],
+                "input_structure": "Review: {text}",
+                "input_fields": [
+                    "text"
+                ]
+            },
+            "ASD": {
+                "description": "For the provided restaurant review sentence, identify pairs of entities and attributes, which define an aspect for which an opinion is expressed. Use the following predefined categories:\n\nEntities: RESTAURANT, FOOD, DRINKS, AMBIENCE, SERVICE, LOCATION\nAttributes: GENERAL, PRICES, QUALITY, STYLE_OPTIONS, MISCELLANEOUS\n\nAdditionally, determine the sentiment polarity of the opinion towards the identified entity-attribute pair. The sentiment polarity can be \"positive\", \"negative\", or \"neutral\".\n\nProvide your findings in the format of a list of opinion dictionaries. Each dictionary should have an \"aspect\" (comprising \"entity\" and \"attribute\"), a \"target\", and a \"sentiment\".",
+                "example_structure": "Review: {text}\nOutput: {output}",
+                "example_fields": [
+                    "text",
+                    "output"
+                ],
+                "input_structure": "Review: {text}",
+                "input_fields": [
+                    "text"
+                ]
+            }
+        },
+        "laptops": {
+            "ASD": {
+                "description": "For the provided laptop review sentence, identify pairs of entities and attributes, which define an aspect for which an opinion is expressed. Use the following predefined categories:\n\nEntities: LAPTOP, DISPLAY, KEYBOARD, MOUSE, MOTHERBOARD, CPU, FANS_COOLING, PORTS, MEMORY, POWER_SUPPLY, OPTICAL_DRIVES, BATTERY, GRAPHICS, HARD_DISC, MULTIMEDIA_DEVICES, HARDWARE, SOFTWARE, OS, WARRANTY, SHIPPING, SUPPORT, COMPANY\nAttributes: GENERAL, PRICE, QUALITY, OPERATION_PERFORMANCE, USABILITY, DESIGN_FEATURES,PORTABILITY, CONNECTIVITY, MISCELLANEOUS\n\nAdditionally, determine the sentiment polarity of the opinion towards the identified entity-attribute pair. The sentiment polarity can be \"positive\", \"negative\", or \"neutral\".\n\nProvide your findings in the format of a list of opinion dictionaries. Each dictionary should have an \"aspect\" (comprising \"entity\" and \"attribute\"), and a \"sentiment\".",
+                "example_structure": "Review: {text}\nOutput: {output}",
+                "example_fields": [
+                    "text",
+                    "output"
+                ],
+                "input_structure": "Review: {text}",
+                "input_fields": [
+                    "text"
+                ]
+            }
+        }
+    }
+}
